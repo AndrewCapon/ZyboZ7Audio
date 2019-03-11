@@ -57,7 +57,7 @@ In the AudioMidDevice folder is another cfg file which will allow the Zybo Z7 to
 	usb-phy = <&usb_phy0>;
 };
 ```
-To connect the Zybo Z7 to a computer use the usb port on the bottom and remove the USB Host power enable jumper next to the USB port. See callout 7 here: https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/reference-manual
+IMPORTANT: To connect the Zybo Z7 to a computer use the usb port on the bottom and remove the USB Host power enable jumper next to the USB port. See callout 7 here: https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/reference-manual
 
 Also in the AudioMidiDevice folder is a script (AudoMidiGadget.sh), this can be used to set the Zybo Z7 to a 4x4 audio device and 64 channel midi device.
 
