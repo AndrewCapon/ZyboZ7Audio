@@ -24,7 +24,7 @@ Now you need to edit this file: <CheckoutFolder>/Petalinux-Zybo-Z7-20/Zybo-Z7-20
 
 You need to add the two files we copied to the bottom as follows:
 
-
+```
 SRC_URI += "file://user_2017-07-10-08-35-00.cfg \
             file://user_2017-07-11-07-44-00.cfg \
             file://user_2017-07-18-17-02-00.cfg \
@@ -45,7 +45,7 @@ SRC_URI += "file://user_2017-07-10-08-35-00.cfg \
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 KERNEL_VERSION_SANITY_SKIP = "1"
-
+```
 
 
 # Creating Gadget for class compliant audio and midi device (optional).
