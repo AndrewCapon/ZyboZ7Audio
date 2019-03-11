@@ -51,12 +51,12 @@ KERNEL_VERSION_SANITY_SKIP = "1"
 # Creating Gadget for class compliant audio and midi device (optional).
 
 In the AudioMidDevice folder is another cfg file which will allow the Zybo Z7 to act as a class compliant audio and midi device, if you want this functionality copy that cfg along with the previous one and add to the bbappend file as well. You also need to edit (CheckoutFolder)/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi and set the usb mode to "peripheral":
-
+```
 &usb0 {	
 	dr_mode = "peripheral";
 	usb-phy = <&usb_phy0>;
 };
-
+```
 To connect the Zybo Z7 to a computer use the usb port on the bottom and remove the USB Host power enable jumper next to the USB port. See callout 7 here: https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/reference-manual
 
 Also in the AudioMidiDevice folder is a script (AudoMidiGadget.sh), this can be used to set the Zybo Z7 to a 4x4 audio device and 64 channel midi device.
