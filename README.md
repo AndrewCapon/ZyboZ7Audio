@@ -18,9 +18,9 @@ There is an issue in the ssm2602 codec code in ssm2602.c, there is also another 
 
 In the AudioFix folder there is a cfg file that make sure that the audio stuff is not loaded as modules and also a patch file to fix the issues in ssm2602.c and pl330.c.
 
-Copy these two files to: <CheckoutFolder>/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-kernel/linux/linux-xlnx
+Copy these two files to: (CheckoutFolder)/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-kernel/linux/linux-xlnx
 
-Now you need to edit this file: <CheckoutFolder>/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-kernel/linux/linux-xlnx_%.bbappend
+Now you need to edit this file: (CheckoutFolder)/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-kernel/linux/linux-xlnx_%.bbappend
 
 You need to add the two files we copied to the bottom as follows:
 
@@ -50,7 +50,7 @@ KERNEL_VERSION_SANITY_SKIP = "1"
 
 # Creating Gadget for class compliant audio and midi device (optional).
 
-In the AudioMidDevice folder is another cfg file which will allow the Zybo Z7 to act as a class compliant audio and midi device, if you want this functionality copy that cfg along with the previous one and add to the bbappend file as well. You also need to edit <CheckoutFolder>/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi and set the usb mode to "peripheral":
+In the AudioMidDevice folder is another cfg file which will allow the Zybo Z7 to act as a class compliant audio and midi device, if you want this functionality copy that cfg along with the previous one and add to the bbappend file as well. You also need to edit (CheckoutFolder)/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi and set the usb mode to "peripheral":
 
 &usb0 {	
 	dr_mode = "peripheral";
