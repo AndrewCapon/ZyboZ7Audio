@@ -22,7 +22,7 @@ Now you need to edit this file: <CheckoutFolder>/Petalinux-Zybo-Z7-20/Zybo-Z7-20
 
 You need to add the two files we copied to the bottom as follows:
 
-
+```
 SRC_URI += "file://user_2017-07-10-08-35-00.cfg \
             file://user_2017-07-11-07-44-00.cfg \
             file://user_2017-07-18-17-02-00.cfg \
@@ -43,7 +43,7 @@ SRC_URI += "file://user_2017-07-10-08-35-00.cfg \
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 KERNEL_VERSION_SANITY_SKIP = "1"
-
+```
 
 In the AudioMidDevice folder is another cfg file which will allow the Zybo Z7 to act as a class compliant audio and midi device (USB port on bottom of card), if you want this functionality copy that cfg along with the previous one and add to the bbappend file as well.
 
