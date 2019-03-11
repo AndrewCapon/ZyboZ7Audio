@@ -7,7 +7,7 @@ This has only been tested on a Zybo-Z7-20 but should work on a Petalinux-Zybo-Z7
 
 
 
-#Fixing Audio
+# Fixing Audio
 
 First follow the instructions here to install petalinux and clone the petalinux project: https://github.com/Digilent/Petalinux-Zybo-Z7-20 or Zybo-Zy-10: https://github.com/Digilent/Petalinux-Zybo-Z7-10
 
@@ -48,7 +48,7 @@ KERNEL_VERSION_SANITY_SKIP = "1"
 
 
 
-#Creating Gadget for class compliant audio and midi device (optional).
+# Creating Gadget for class compliant audio and midi device (optional).
 
 In the AudioMidDevice folder is another cfg file which will allow the Zybo Z7 to act as a class compliant audio and midi device, if you want this functionality copy that cfg along with the previous one and add to the bbappend file as well. You also need to edit <CheckoutFolder>/Petalinux-Zybo-Z7-20/Zybo-Z7-20/project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi and set the usb mode to "peripheral":
 
@@ -63,7 +63,7 @@ Also in the AudioMidiDevice folder is a script (AudoMidiGadget.sh), this can be 
 
 
 
-#Building
+# Building
 
 Now follow the rest of the instructions to build and deploy to your Zybo Z7: https://github.com/Digilent/Petalinux-Zybo-Z7-20 or Zybo-Zy-10: https://github.com/Digilent/Petalinux-Zybo-Z7-10
 
